@@ -1,0 +1,78 @@
+style[contenteditable=true] {
+    display: block;
+    whitespace: pre;
+    background-color: #333;
+    font-size: 13px;
+    color: white;
+    font-family: monospace;
+    padding: 20px
+  }
+
+/* Layouts */
+.main-container {padding: 10px 0;}
+.main-column { width:980px; margin:auto; position: relative;}
+.small-column { width:244px; }
+
+/* Base Columns */
+.col-left { float:left; width:195px; padding:0 0 1px; }
+.col-main { float:left; width:570px; }
+.col-right { float:right; width:195px; padding:0 0 1px; }
+
+/* 1 Column Layout */
+.col1-layout .col-main { float:none; width:auto; }
+
+/* 2 Columns Layout */
+.col2-left-layout .col-main { 
+    float:right; 
+    width: 762px;
+    margin-right: 10px; 
+    border: 1px solid #ccc; 
+		-moz-border-radius: 8px 8px 8px 8px;
+		-webkit-border-radius: 8px 8px 8px 8px;
+		border-radius: 8px 8px 8px 8px;  
+}
+.col2-left-layout .col-left {
+  border: 1px solid #ccc; 
+		-moz-border-radius: 8px 8px 8px 8px;
+		-webkit-border-radius: 8px 8px 8px 8px;
+		border-radius: 8px 8px 8px 8px;  
+		margin-left: 5px;
+} 
+
+.col2-right-layout .col-main {
+  width: 760px; 
+  min-height: 400px;
+  margin-left: 5px;
+}
+.col2-right-layout .col-right {width: 200px;margin-right:5px;} 
+
+/* 3 Columns Layout */
+.col3-layout .col-main { 
+	width:568px; 
+	padding-bottom: 10px; 
+	margin-left: 5px;
+	clear: both;
+	min-height: 480px;
+	background: #fff;
+}
+.col3-layout .col-left {margin-left: 5px;}
+.col3-layout .col-right {margin-right: 5px;}
+.col3-layout .col-wrapper { float:left; ; }
+.col3-layout .col-wrapper .col-main { float:right; }
+
+/* Content Columns */
+.col2-set .col-1 { float:left; width:48.5%; }
+.col2-set .col-1 { float:left; width:48.5%; }
+.col2-set .col-2 { float:right; width:48.5%; }
+.col2-set .col-narrow { width:32%; }
+.col2-set .col-wide { width:65%; }
+
+.col3-set .col-1 { float:left; width:32%; }
+.col3-set .col-2 { float:left; width:32%; margin-left:2%; }
+.col3-set .col-3 { float:right; width:32%; }
+.col3-set .col { float:left; width:31.5%; margin-left:1.4%; }
+
+.col4-set .col-1 { float:left; width:23.5%; }
+.col4-set .col-2 { float:left; width:23.5%; margin:0 2%; }
+.col4-set .col-3 { float:left; width:23.5%; }
+.col4-set .col-4 { float:right; width:23.5%; }
